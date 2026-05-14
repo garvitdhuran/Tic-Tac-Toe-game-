@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #1a1a2e;
+    background:#080c14;
     color: grey;
     font-family:monospace;
     display:flex;
@@ -21,6 +21,14 @@ body{
 
 }
 
+#top {
+    display:flex;
+    
+    flex-direction: row;
+    align-items:center;
+    gap:40px;
+}
+
 
 
 
@@ -30,7 +38,7 @@ body{
 #top h1{
 
 
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 5px;
     color: lavender;
 
@@ -44,7 +52,7 @@ body{
 
     align-items: center;
 
-    background:#16213e ;
+    background:#111827; 
     padding: 10px 20px;
     font-size: 15px;
     gap: 4px;
@@ -76,7 +84,7 @@ body{
 
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(3,100px);
-    gap:5px;
+    gap:10px;
     margin-top: 5px;
 
 }
@@ -88,8 +96,8 @@ body{
 .cell {
     width:100px;
     height:100px;
-    background: #16213e;
-    border:1px solid #333;
+    background: #111827;
+    border:1px solid: #2a3a5c;
     border-radius: 5px;
     font-size: 35px;
     font-weight: bold;
@@ -130,8 +138,8 @@ body{
 }
 #btns button{
     background:transparent;
-    border:1px solid #555;
-    color:#ccc;
+    border:1px solid #2a3a5c;
+    color:#a29bfe;
     padding: 7px 15px;
     border-radius: 5px;
 
@@ -243,7 +251,13 @@ body{
     font-size:12px;
     color:#555;
     font-family:monospace;
-    
+
 }
+
+/* #credit-file { 
+    font-size: 10px;
+    font-weight:25px;
+
+} */
 
 
