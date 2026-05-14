@@ -14,11 +14,6 @@ Two player gameplay
 
 
 
-Preview
-
-<img width="700" alt="Tic Tac Toe Preview" src="https://placehold.co/700x400/png">
-
-
  What I Learned
 
 - DOM manipulation
