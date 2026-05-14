@@ -22,5 +22,7 @@ Two player gameplay
 - CSS layout, styling
 - JavaScript functions and arrays
 
+Preview:
 
 
+<img width="1512" height="982" alt="Screenshot 2026-05-14 at 5 06 58 PM" src="https://github.com/user-attachments/assets/7a6c4492-42bc-4f31-8ba4-c57148eae95b" />
