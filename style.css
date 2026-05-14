@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background: #1a1a2e;
+    color: grey;
+    font-family:monospace;
+    display:flex;
+    flex-direction: column;
+
+
+    align-items: center;
+    padding-top: 30px;
+    gap: 15px;
+
+
+
+}
+
+
+
+
+
+
+
+#top h1{
+
+
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: lavender;
+
+
+}
+
+
+#p1box, #p2box {
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background:#16213e ;
+    padding: 10px 20px;
+    font-size: 15px;
+    gap: 4px;
+    
+    
+
+}
+
+
+#p1box span:last-child, #p2box span:last-child{
+    font-size : 25px;
+    font-weight: bold;
+
+}
+
+
+#msg {
+    font: size 14px;
+    color: #aaa;
+    letter-spacing:1px;
+
+}
+
+
+
+#gamebox{
+    display:grid;
+    /* make 3 rows and cols and also align accordingly and make sure you keep the spacing consistent */
+
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap:5px;
+    margin-top: 5px;
+
+}
+
+
+
+
+
+.cell {
+    width:100px;
+    height:100px;
+    background: #16213e;
+    border:1px solid #333;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    font-family:monospace;
+    cursor: pointer;
+
+    transition: background 0.15s;
+}
+ 
+
+/* Background showing errors make sure to fix it  like no errors on code bt still shows the background in red i wonder whats the pribelm */
+
+.cell:hover {
+    background:#0f3460;
+
+}
+
+
+.win {
+    background: #2d2d2d;
+    border-color: #a29bfe;
+    box-shadow:0 0 8px #a29bfe88;
+
+}
+
+
+
+
+
+
+
+
+#btns {
+    display:flex;
+    gap: 10px;
+    margin-top:5px;
+
+}
+#btns button{
+    background:transparent;
+    border:1px solid #555;
+    color:#ccc;
+    padding: 7px 15px;
+    border-radius: 5px;
+
+    font-family:monospace;
+    font-size:15px;
+    cursor:pointer;
+
+
+
+
+}
+
+
+
+#btns button:hover {
+    border-color:#a29bfe;
+    color:#a29bfe;
+
+
+
+}
+
+
+
+#overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#popup {
+    background:#16213e;
+    border: 1px solid #a29bfe;
+    border-radius:10px;
+    padding:35px 50px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+
+
+
+
+}
+
+#result {
+    font-size:20px;
+    font-family: monospace;
+    color:#a29bfe;
+
+
+
+}
+
+
+#again {
+    background: #a29bfe;
+    color:#1a1a2e;
+    border:none;
+    padding:10px 25px ;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+
+
+#again:hover{
+    background:#c9c0ff;
+
+}
+
+#credit { 
+    position: fixed;
+    bottom:12px;
+    right:15px;
+    font-size:12px;
+    color:#555;
+    font-family:monospace;
+    
+}
+
+
