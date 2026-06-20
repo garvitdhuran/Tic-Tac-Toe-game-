@@ -158,6 +158,40 @@ function showwinner(){
 
 
 
+function doconfettistuff(){
+    var colorz = [
+        '#a29bfe',
+        '#e74c3c',
+        '#3498db',
+        '#feca57',
+        '#1dd1a1',
+        '#ff6b81'
+    ]
+
+
+    for(var i = 0; i<40; i++){
+
+
+
+        var bit = document.createElement()
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 function restart(){
     squares = ['','','','','','','','','']
