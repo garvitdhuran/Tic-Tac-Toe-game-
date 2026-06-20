@@ -97,7 +97,7 @@ body{
     width:100px;
     height:100px;
     background: #111827;
-    border:1px solid: #2a3a5c;
+    border:1px solid #2a3a5c;
     border-radius: 5px;
     font-size: 35px;
     font-weight: bold;
@@ -120,12 +120,42 @@ body{
     background: #2d2d2d;
     border-color: #a29bfe;
     box-shadow:0 0 8px #a29bfe88;
+    animation: winglow 0.6s ease-in-out infinite alternate;
 
 }
 
 
+@keyframes winglow{
+    from{
+        box-shadow: 0 0 22px #a29bfeee;
+        transform:scale(1.05);
+    }
+}
 
 
+.confettibit{
+    position:fixed;
+    top:-20px;
+    border-radius:2px;
+    z-index:999;
+    animation-name:fallconfetti;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+@keyframes fallconfetti {
+    0% {
+        transform:translateY(0) rotate(0deg);
+        opacity: 1;
+        }
+    
+    100% {
+        transform:translateY(110vh) rotate(360deg);
+        opacity:0.9;
+
+    }
+}
 
 
 

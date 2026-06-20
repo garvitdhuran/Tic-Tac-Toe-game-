@@ -173,7 +173,34 @@ function doconfettistuff(){
 
 
 
-        var bit = document.createElement()
+        var bit = document.createElement('div')
+        bit.className = 'confettibit'
+
+        bit.style.left = Math.random()*100 + 'vw'
+        bit.style.background = 
+        colorz[Math.floor(Math.random() * colorz.length)]
+
+
+        var size = Math.random() * 8+6
+
+
+        bit.style.width = size + 'px'
+        bit.style.height = size + 'px'
+
+        var spd = Math.random() *1.5 + 1.8
+
+        bit.style.animationDuration = spd +'spd'
+        bit.style.animationDelay = (Math.random() * 0.3) + 's'
+
+
+        document.body.appendChild(bit)
+
+
+        setTimeout(function(b){
+            return function(){
+                b.remove()
+            }
+        }(bit), (spd + 0.5) * 1000)
 
 
 
